@@ -1,0 +1,87 @@
+body {
+    background: rgb(14, 41, 39);
+    font-family: 'Reenie Beanie', cursive;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #bfc3c9;
+}
+input {
+    margin: 0;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 4rem;
+    text-align: center;
+    width: 13rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+}
+input::selection {
+    background: #000000;
+    color: white;
+}
+button {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2.3rem;
+    padding: 0.8rem;
+    color: white;
+    background: rgb(85, 83, 83);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+#numero-aleatorio {
+    color: #e7e7e7;
+    background: #5e5e5e;
+    font-size: 20rem;
+    border: 5px solid #e7e7e7; 
+    border-radius: 20px;
+    width: 22rem;
+    height: 22rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#numeroAleatorio:hover {
+    font-size: 23rem;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.6);
+}
+button:hover {
+    font-size: 2.7rem;
+    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.6);
+    transition: all 0.3 linear;
+}
+
+
+
+@media (max-width: 600px){
+    h1 {
+        font-size: 2.5rem;
+    }
+    input {
+        font-size: 3rem;
+        width: 8rem;
+        height: 2rem;
+    }
+    button {
+        font-size: 1.8rem;
+    }
+    button:hover {
+        font-size: 2rem;
+    }
+    #numero-aleatorio {
+        font-size: 13rem;
+        width: 15rem;
+        height: 15rem;
+    }
+}
