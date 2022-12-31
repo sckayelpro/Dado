@@ -3,19 +3,38 @@ body {
     font-family: 'Reenie Beanie', cursive;
     text-align: center;
 }
-
+body::selection {
+    background: #000000;
+    color: white;
+}
+#dices-button-container {
+    display: flex;
+}
+.dices {
+    margin: 0 auto;
+    padding: 0 0.2rem;
+}
 h1 {
     margin: 0;
     font-size: 3rem;
     color: #bfc3c9;
 }
-input {
+#caras-input {
     margin: 0;
     font-family: 'Reenie Beanie', cursive;
     font-size: 4rem;
     text-align: center;
-    width: 13rem;
+    width: 8rem;
     height: 3rem;
+    border-radius: 0.3rem;
+}
+#total {
+    margin: 1rem;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 3rem;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
     border-radius: 0.3rem;
 }
 input::selection {
@@ -34,54 +53,107 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
-
-#numero-aleatorio {
+.roll-dices {
     color: #e7e7e7;
     background: #5e5e5e;
-    font-size: 20rem;
     border: 5px solid #e7e7e7; 
     border-radius: 20px;
-    width: 22rem;
-    height: 22rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: 0.5s;
 }
-#numeroAleatorio:hover {
-    font-size: 23rem;
-    box-shadow: 0 20px 28px rgba(0, 0, 0, 0.6);
+.roll-dices::selection {
+    background: #000000;
+    color: white;
 }
+#roll-dice-1 {
+    width: 13rem;
+    height: 13rem;
+    font-size: 13rem;
+}
+#roll-dice-2, #roll-dice-3 {
+    display: inline-block;
+    margin: 1rem;
+    width: 13rem;
+    height: 13rem;
+    font-size: 13rem;
+}
+#roll-dice-4, #roll-dice-5, #roll-dice-6 {
+    display: inline-block;
+    margin: 1rem;
+    width: 13rem;
+    height: 13rem;
+    font-size: 13rem;
+}
+#roll-dice-7, #roll-dice-8, #roll-dice-9, #roll-dice-0 {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    width: 13rem;
+    height: 13rem;
+    font-size: 13rem;
+}
+
+#roll-dice-1::selection {
+    background: transparent;
+}
+
 button:hover {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     box-shadow: 0 20px 28px rgba(0, 0, 0, 0.6);
     transition: all 0.3 linear;
 }
-
-
 
 @media (max-width: 600px){
     h1 {
         font-size: 2.5rem;
     }
-    input {
-        font-size: 3rem;
-        width: 8rem;
+    #caras-input {
+        font-size: 2.5rem;
+        width: 5rem;
         height: 2rem;
     }
+    #total {
+        font-size: 2rem;
+        width: 3rem;
+        height: 2rem;
+    }
+
     button {
         font-size: 1.8rem;
     }
     button:hover {
         font-size: 2rem;
     }
-    #numero-aleatorio {
-        font-size: 13rem;
-        width: 15rem;
-        height: 15rem;
+    #roll-dice-1 {
+        width: 8rem;
+        height: 8rem;
+        font-size: 8rem;
     }
+    #roll-dice-2, #roll-dice-3 {
+        display: inline-block;
+        margin: 1rem 0.5rem;
+        width: 8rem;
+        height: 8rem;
+        font-size: 8rem;
+    }
+    #roll-dice-4, #roll-dice-5, #roll-dice-6 {
+        display: inline-block;
+        margin: 1rem 0.5rem;
+        width: 8rem;
+        height: 8rem;
+        font-size: 8rem;
+    }
+    #roll-dice-7, #roll-dice-8, #roll-dice-9, #roll-dice-0 {
+        display: inline-block;
+        margin: 1rem 0.5rem;
+        width: 8rem;
+        height: 8rem;
+        font-size: 8rem;
+    }
+    
 }

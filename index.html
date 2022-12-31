@@ -11,13 +11,22 @@
 </head>
 <body>
   <div id="dado">
-    <div id="num-caras-container">
+    <div id="dices-button-container">
+      <button class="dices" id="one-dice">1 dado</button>
+      <button class="dices" id="two-dices">2 dados</button>
+      <button class="dices" id="three-dices">3 dados</button>
+      <button class="dices" id="four-dices">4 dados</button>
+    </div>
+    <div id="input-container">
       <h1>Número de caras</h1>
       <input type="text" id="caras-input" placeholder="...">
     </div>
-    <div id="numero-aleatorio" class="roll-button-container">?</div>
-    <div class="roll-button-container">
-      <button id="roll-button">TIRAR EL DADO</button>
+    <div id="dices-container">
+      <div id="roll-dice-1" class="roll-dices">?</div>
+    </div>
+    <div>
+        <input type="text" id="total" placeholder="Total">
+        <button id="roll-dice-button">TIRAR EL DADO</button>
     </div>
   </div>
   
