@@ -1,6 +1,6 @@
 body {
     background: #0f172a;
-    font-family: 'Martian Mono', monospace;
+     font-family: Arial, sans-serif;
     text-align: center;
 }
 body::selection {
@@ -11,7 +11,7 @@ body::selection {
     display: flex;
 }
 .dices {
-    font-family: 'Martian Mono', monospace;
+    font-family: Arial, sans-serif;
     color: white;
     background: #0f172a;
     border: 1px solid #6bebf8cc;
@@ -36,7 +36,7 @@ h1 {
 }
 #caras-input {
     margin: 0;
-    font-family: 'Martian Mono', monospace;
+    font-family: Arial, sans-serif;
     font-size: 3rem;
     text-align: center;
     width: 8rem;
@@ -44,8 +44,8 @@ h1 {
     border-radius: 0.3rem;
 }
 #total {
-    margin: 1rem;
-    font-family: 'Martian Mono', monospace;
+    margin: 1rem; 
+    font-family: Arial, sans-serif;
     font-size: 2.5rem;
     text-align: center;
     width: 5rem;
@@ -57,7 +57,7 @@ input::selection {
     color: white;
 }
 #roll-dice-button {
-    font-family: 'Martian Mono', monospace;
+    font-family: Arial, sans-serif;
     font-size: 2.3rem;
     padding: 0.8rem;
     color: white;
